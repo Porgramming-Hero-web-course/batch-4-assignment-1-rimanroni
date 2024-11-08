@@ -20,8 +20,8 @@ function isCircle(input:Circle | Rectangle) {
  
 function calculateShapeArea(input:Circle | Rectangle) : number{
     if(isCircle(input)){
-       
-        return Math.PI * input.radius * input.radius;
+       const result = Math.PI * input.radius * input.radius
+        return parseFloat(result.toFixed(2)) ;
     }else{
        
         return input.width * input.height
