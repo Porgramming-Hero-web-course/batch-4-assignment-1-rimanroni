@@ -75,3 +75,20 @@ function updateProfile(userProfile, updateUserProfile) {
 var riman = { name: "riman roni", age: 19, email: "rimanroni100@gmail.com" };
 var updateRiman = updateProfile(riman, { email: "rimanroni386@gmail.com" });
 // console.log(updateRiman);
+// Problem 7 
+var Car = /** @class */ (function () {
+    function Car(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+    Car.prototype.getCarAge = function () {
+        var currentYear = new Date().getFullYear();
+        var carYear = this.year;
+        var result = currentYear - carYear;
+        console.log(result);
+    };
+    return Car;
+}());
+var car = new Car("Honda", "Civic", 2018);
+// car.getCarAge();

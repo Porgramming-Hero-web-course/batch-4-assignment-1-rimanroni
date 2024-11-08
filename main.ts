@@ -8,8 +8,6 @@
 
 //  console.log(sumArray([1,2,3,4,5, 10]))
 
-
-
 // Problem 2:  
 
 
@@ -126,4 +124,24 @@ const riman:Profile = {name:"riman roni", age : 19, email:"rimanroni100@gmail.co
 const updateRiman = updateProfile(riman, {email:"rimanroni386@gmail.com"});
 
 // console.log(updateRiman);
+
+// Problem 7 
+
+class Car {
+     constructor(
+        public make:string,
+        public model:string,
+        public year:number 
+    ){}
+    getCarAge(){
+        const currentYear = new Date().getFullYear();
+        const carYear = this.year;
+        const result = currentYear - carYear;
+       console.log(result)
+    }
+}
+
+const car = new Car("Honda", "Civic", 2018);
+// car.getCarAge();
+
 
