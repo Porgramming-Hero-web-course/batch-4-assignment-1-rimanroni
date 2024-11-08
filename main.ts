@@ -96,3 +96,34 @@ const rectangleArea = calculateShapeArea({
 
  const person = { name: "Arohim", age: 30 };
 //  console.log(getProperty(person, "age")); 
+
+
+// Problem 6 
+
+
+interface Profile {
+    name : string;
+    age : number;
+    email : string;
+}
+
+// updateProfile name ekta function create krsi input hisabe userProfile and updateUser Profile name e 2 ta peramitar nicchi 
+
+// 1 pera mitar er type Profile diye defiend kore dicchi second e Partial nisi Partial holo change korar somoi jei ta oi ta change korte parbo er jonno sob type ke na nilew hobe je kuno ekta nite parbo Profile theke 
+
+
+function  updateProfile(userProfile:Profile, updateUserProfile: Partial<Profile>){
+
+    // userProfile and UpdateUserProfile ke ekta object er vitore Spread operator kore new object create kortechi 
+
+
+    return {...userProfile , ...updateUserProfile}
+};
+
+
+const riman:Profile = {name:"riman roni", age : 19, email:"rimanroni100@gmail.com"};
+
+const updateRiman = updateProfile(riman, {email:"rimanroni386@gmail.com"});
+
+// console.log(updateRiman);
+
