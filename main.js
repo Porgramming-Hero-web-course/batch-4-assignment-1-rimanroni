@@ -20,5 +20,32 @@ function countWordOccurrences(sentence, word) {
     return result;
 }
 ;
-// console.log(countWordOccurrences('hello riman roni riman bhai', 'riman'))
-// Problem 4: 
+// create function type guards 
+// ei khane input ke check kore nidi circle ki na 
+function isCircle(input) {
+    return input.shape === 'circle';
+}
+// create calculateShapeArea function 
+// codition er vitore check krsi isCircle hole sei onu jai calculate hobe else hole rectangle  er calculate hobe 
+function calculateShapeArea(input) {
+    if (isCircle(input)) {
+        // type judi circle hoi to 
+        return Math.PI * input.radius * input.radius;
+    }
+    else {
+        // input judi rectangle hoi to 
+        return input.width * input.height;
+    }
+}
+// check problem 4 
+/*
+const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
+console.log(circleArea);
+const rectangleArea = calculateShapeArea({
+    shape: "rectangle",
+    width: 4,
+    height: 6,
+  });
+  console.log(rectangleArea);
+
+  */
