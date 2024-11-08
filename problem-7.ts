@@ -10,7 +10,7 @@ class Car {
        const currentYear = new Date().getFullYear();
        const carYear = this.year;
        const result = currentYear - carYear;
-      console.log(result)
+       console.log(`${result} (assuming current year is ${currentYear})`)
    }
 }
 
