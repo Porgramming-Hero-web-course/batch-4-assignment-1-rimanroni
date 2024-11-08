@@ -49,3 +49,9 @@ const rectangleArea = calculateShapeArea({
   console.log(rectangleArea);
 
   */
+//   Problem 5 
+function getProperty(inputObj, key) {
+    return inputObj[key];
+}
+var person = { name: "Arohim", age: 30 };
+//  console.log(getProperty(person, "age")); 
