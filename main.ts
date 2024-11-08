@@ -1,1 +1,10 @@
-console.log('ekhn rat 2 ta baje 20 minit sokal e hobe coding ekhn ghumai')
+ // Problem 1: 
+
+
+ function sumArray(input:number[]){
+    return input.reduce((accet, currentValue)=>accet+currentValue, 0)
+ };
+
+
+//  console.log(sumArray([1,2,3,4,5, 10]))
+
